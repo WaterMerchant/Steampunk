@@ -1,0 +1,12 @@
+{
+	id: "71A6B76FE18A018C"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{ item: "twilightforest:mining_sapling" }
+		{ item: "twilightforest:sorting_sapling" }
+		{ item: "twilightforest:time_sapling" }
+		{ item: "twilightforest:transformation_sapling" }
+	]
+	title: "The Tree's of Legend"
+}
