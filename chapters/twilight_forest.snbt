@@ -1,0 +1,2686 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "twilight_forest"
+	group: "5E3CAACB575722D6"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	id: "2408427F12F76400"
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to the &1Twilight &1Forest!"
+				""
+				"To create a portal to the Twilight forest, make a 2xx2 hole and fill it with water. Surround the edges of the hole with flowers, and throw a diamond in."
+				""
+				"Thor will give you a sign if you did it right."
+			]
+			id: "6C819134525F8A9E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7F3FA48A588B0C14"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "Creating the Portal"
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				icon: "twilightforest:twilight_portal_miniature_structure"
+				id: "381BED7886A81045"
+				title: "Enter the Twilight Forest"
+				type: "dimension"
+			}]
+			title: "The Twilight Forest"
+			x: -6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6C819134525F8A9E"]
+			description: [
+				"In the Twilight Forest, there are a bunch of new entities to discover."
+				""
+				"One of the worst is the Cicada. I suggest killing this for the achievement, but killing any Twilight Forest mob will work."
+			]
+			id: "0E683549ADAA0CB6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "749E4B419B001FA5"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			shape: "circle"
+			tasks: [{
+				advancement: "twilightforest:twilight_hunter"
+				criterion: ""
+				icon: "twilightforest:cicada"
+				id: "2AC7EFC820183831"
+				title: "The Silence of the Forest"
+				type: "advancement"
+			}]
+			x: -6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6C819134525F8A9E"]
+			description: [
+				"Find the Questing Ram, for it bestows wealth to those who give it Rainbow Wool (16 colors)"
+				""
+				"Hint: There's a dispenser above your head in the ruins where the Ram is. It might prove useful."
+			]
+			id: "498F3FB4246D82BA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "134B7AC9564B53F4"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			tasks: [{
+				id: "53820707AD6FB991"
+				item: "twilightforest:quest_ram_trophy"
+				type: "item"
+			}]
+			title: "Ramification"
+			x: -6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0E683549ADAA0CB6"]
+			description: [
+				"It's easy to get lost in the Forest. In your travels, you'll run into Obsidian pillars."
+				""
+				"These pillars will have Ravens around them. Slay them to get their feathers, which you can use to create a map for the Twilight Forest!"
+			]
+			id: "1CBD25C2136A80CF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "00808A3BD8230EC9"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "65C692535F18D736"
+				item: "twilightforest:raven_feather"
+				type: "item"
+			}]
+			title: "Raven Feathers"
+			x: -5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1CBD25C2136A80CF"]
+			id: "2E9E879DD9FFA2B3"
+			rewards: [
+				{
+					count: 4
+					id: "7F9FB8899FA7EE00"
+					item: "twilightforest:torchberries"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4C0A8A4561438737"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				id: "23E30EEC28BA1322"
+				item: "twilightforest:magic_map_focus"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2E9E879DD9FFA2B3"]
+			description: [
+				"This map is a must have for the Twilight Forest."
+				""
+				"Using a Blank Magic Map will give you a map that shows icons for nearby bosses and structures."
+			]
+			id: "2C5F9896470242E7"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "01DF88FED04756E2"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "55401A3CE75C987C"
+				item: "twilightforest:magic_map"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6C819134525F8A9E"]
+			description: [
+				"The first boss on your Twilight adventure can be found within the courtyard."
+				""
+				"Killing the Naga will grant entry to the next boss, the Lich."
+			]
+			id: "2C77724979ED584F"
+			rewards: [
+				{
+					count: 3
+					id: "44C5B2E9D51F0BA3"
+					item: "twilightforest:naga_scale"
+					random_bonus: 3
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7DDAA79180528FC9"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				id: "7D6E1073AA2B4BD3"
+				item: "twilightforest:naga_trophy"
+				type: "item"
+			}]
+			title: "Time to Even the Scales"
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2C77724979ED584F"]
+			id: "54E4FCD6806F4D43"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "185C2DBBCAF4DE95"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "541580EA402ACFF2"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					id: "6EB2F8482C6D5EC3"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:naga_chestplate"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:fire_protection"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "317F97470E1BB7AC"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:naga_leggings"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:protection"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Naga Scale Armor"
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2C77724979ED584F"]
+			description: [
+				"Within his tower, a Lich of great power lives here."
+				""
+				"It is a 3 phase fight, but only 1 phase is unique."
+				""
+				"Phase 1: The Lich surrounds himself in shields, and attacks you with Ender Pearls that shoot out like ghast fireballs. Reflect these back to the Lich to break his sheilds! As his shields break, he'll send out duplicates to distract you."
+				""
+				"Phase 2: The Lich switches scepters to summon Zombies to help him in the fight. With his defenses down, you will be able to melee him!"
+				""
+				"Phase 3: Once all the charges are spent on his Scepter, he will switch to a Golden Sword and go beserk. Kill him fast!"
+			]
+			id: "727CDCB7F63F018C"
+			rewards: [
+				{
+					id: "583BD3B4646AFB0C"
+					item: "minecraft:golden_apple"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5A0AE4ACDAA72CD5"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "36BEC0A588BD10F3"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				id: "3D8A4E2F4333CB02"
+				item: "twilightforest:lich_trophy"
+				type: "item"
+			}]
+			title: "Bring out your Dead"
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["727CDCB7F63F018C"]
+			description: [
+				"Using this Scpeter, you can drain the life of your enemies!"
+				""
+				"To recharge the scepter, combine it with a Fermented Spider Eyes in the crafting table."
+			]
+			id: "177C6A43CCC4D250"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "196F365AAFA23BC9"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "46DD5285C111856F"
+					item: "minecraft:fermented_spider_eye"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "60F9BFA6157BA11A"
+				item: {
+					Count: 1b
+					id: "twilightforest:lifedrain_scepter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["727CDCB7F63F018C"]
+			description: [
+				"Do you want to be able to shoot Ender blasts like the Lich? This is the scepter for it."
+				""
+				"To recharge, combine it with an Ender Pearl in a crafting table."
+			]
+			id: "6F6A3694F34FF0CE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4623E3F1186BAE92"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "4A000E471A48A453"
+					item: "minecraft:ender_pearl"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "381A7084D862DAEA"
+				item: {
+					Count: 1b
+					id: "twilightforest:twilight_scepter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["727CDCB7F63F018C"]
+			description: [
+				"This scepter summons shields around you for protection."
+				""
+				"To recharge, combine with Golden Apples in a crafting table."
+			]
+			id: "30574B76F2808D41"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "067E4F8853EA530B"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "328694608A73BD40"
+					item: "minecraft:golden_apple"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "53AA6F2B8544B2DB"
+				item: {
+					Count: 1b
+					id: "twilightforest:fortification_scepter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["727CDCB7F63F018C"]
+			description: [
+				"Because who doesn't want to summon their own Zombies?"
+				""
+				"To recharge, combine with Rotten Flesh in a crafting table."
+			]
+			id: "76C252A44A5BA201"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "69C73836E203D5B4"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "118BFB82D432A4DC"
+					item: "minecraft:rotten_flesh"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "4E50C7B0F067CF1E"
+				item: {
+					Count: 1b
+					id: "twilightforest:zombie_scepter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["727CDCB7F63F018C"]
+			description: [
+				"It's time to go to the swamps! In the swamps, you'll find an odd-looking hill with an entrance on top. This is the Minoshroom Labyrinth!"
+				""
+				"Inside you'll fight several new enemies that can drop the Maze Map Focus. This is needed to make a Maze Map."
+				""
+				"This is a special map that will map your way around the Minoshroom Labyrinth. Your minimap mod has no power here."
+				""
+				"You can also find several loot rooms with special loot for the Maze!"
+			]
+			icon: "twilightforest:maze_map"
+			id: "6E50777CCBB65ACC"
+			shape: "circle"
+			subtitle: "I wonder if we'll find Shrek"
+			tasks: [
+				{
+					id: "716BDBD6E246D2E8"
+					item: "twilightforest:maze_map"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "48AB04207BEBD2ED"
+					item: "twilightforest:raw_meef"
+					type: "item"
+				}
+			]
+			title: "To the Swamps!"
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6E50777CCBB65ACC"]
+			description: [
+				"If a Maze Map can see through walls, what if it could see right through the stones around you to reveal all the treasures within? Well, if you perform a little upgrade, it can. It's expensive, but will almost certainly pay for itself quickly. A Ore Map is an item that can see through walls and detect ores within the layers above or below the Map's layer, displaying each ore in their respective colors. The Ore Map, when crafted, will be blank, so the user must use it to display the map. "
+				""
+				"A little trick one can do with these maps is to create it on a layer where rare ores generate and then navigate on land to generate a view of what is beneath them."
+				""
+				"All Ores found by this map will display their respective color on the Map, however Ores added by other mods will only display as pink."
+			]
+			id: "149218EAF8A841B8"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7605B69BBBFFBAC1"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "375228EB0B4882BF"
+				item: "twilightforest:ore_map"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6E50777CCBB65ACC"]
+			description: [
+				"A special pickaxe rarely found in Labyrinths."
+				""
+				"This pick will take 1 damage when breaking Maze walls, instead of the 16 damage for all other picks!"
+			]
+			id: "0AEC2C049AB1ADB1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "15EF1DA41CACDD84"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "Trapped chamber, do not enter?"
+			tasks: [{
+				id: "02B3E20A5C3AFD12"
+				item: {
+					Count: 1b
+					id: "twilightforest:mazebreaker_pickaxe"
+					tag: {
+						Damage: 0
+						Enchantments: [
+							{
+								id: "minecraft:efficiency"
+								lvl: 4s
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:fortune"
+								lvl: 2s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6E50777CCBB65ACC"]
+			description: [
+				"This item will prevent you from loosing the items in your main and off-hand, as well as your armor when you die."
+				""
+				"&eThis effect will not work when using the Enigmatic Amulet, so take caution and only use these when you aren't wearing it!&r"
+			]
+			id: "44BD1BDFC74F5758"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "42753DC05AB88609"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4E158C528E64322E"
+				item: "twilightforest:charm_of_keeping_1"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["44BD1BDFC74F5758"]
+			description: [
+				"This item will let you keep your armor and hotbar when you die."
+				""
+				"&eThis effect will not work when using the Enigmatic Amulet, so take caution and only use these when you aren't wearing it!&r"
+			]
+			id: "461C18687FEB12C1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7D48EE8F4574FB6D"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "6BC7534F343C7752"
+				item: "twilightforest:charm_of_keeping_2"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["461C18687FEB12C1"]
+			description: [
+				"This item will let you keep all your items in your inventory when you die."
+				""
+				"&eThis effect will not work when using the Enigmatic Amulet, so take caution and only use these when you aren't wearing it!&r"
+			]
+			id: "2176D1B507235B33"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "59916A557DCA68E2"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "69C59802F7EA4DA3"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "59EA6E5D71DDCB4F"
+				item: "twilightforest:charm_of_keeping_3"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6E50777CCBB65ACC"]
+			description: [
+				"In the depths of the Labyrinth Swamp is a giant Minoshroom."
+				""
+				"Once defeated, it'll drop Meef Stroganoff. To unlock the next area, you must eat it."
+			]
+			id: "46771801E077028B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0F7901D593D3263A"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0ABFE8E3FBF2B621"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					id: "722E8094CC4BD767"
+					item: "twilightforest:minoshroom_trophy"
+					type: "item"
+				}
+				{
+					id: "22D652E10BEED8C8"
+					item: "twilightforest:meef_stroganoff"
+					type: "item"
+				}
+			]
+			title: "Mighty Stroganoff"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["46771801E077028B"]
+			description: ["This is a drop from the Minoshroom. It deals more damage when sprinting."]
+			id: "2CED82F3745E6B9B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1FF870CC52E91290"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			tasks: [{
+				id: "6AF9D5B49FAA0742"
+				item: {
+					Count: 1b
+					id: "twilightforest:diamond_minotaur_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["46771801E077028B"]
+			description: [
+				"The infamous multi-headed beast from Greek Mythology."
+				""
+				"Ranged attacks aren't effective, meaning you'll need to get up close and personal. Either by attacking it in melee and avoiding its stomps, or sending its balls of fire right back at it."
+				""
+				"Once defeated, you'll be able to find the next boss in the Dark Forest."
+			]
+			id: "64AF345D00F7A849"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2D7FBADC6637A2FB"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3D646B7E57DA1CA2"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+			]
+			shape: "circle"
+			subtitle: "Fiery Swamp"
+			tasks: [{
+				id: "77BAB7369D02CA67"
+				item: "twilightforest:hydra_trophy"
+				type: "item"
+			}]
+			title: "Hydra Slayer"
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["64AF345D00F7A849"]
+			description: [
+				"The Hydra drops Fiery Blood that can be used to craft Fiery armor."
+				""
+				"When wearing the full set, enemies that attack you will be set on fire for 10 seconds."
+			]
+			id: "53BD41E2CDA686D8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "384CCE1199F7FDB2"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "1FCA6A23C987AE92"
+					item: "twilightforest:fiery_ingot"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "391F97853DFF4A4A"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					id: "1EBE164AE9C6084E"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:fiery_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "191752BB40A2924E"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:fiery_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5CAA1AD4F6C6DC0D"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:fiery_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "46685F5613E631C2"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:fiery_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Fiery Armor"
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["64AF345D00F7A849"]
+			description: [
+				"Using the Fiery Blood from the Hydra, you can make several tools."
+				""
+				"The Fiery Sword comes with Fire Aspect II when crafted."
+				""
+				"The Fiery Pickaxe comes with auto-smelt."
+			]
+			id: "721D5C1F0F876E34"
+			rewards: [
+				{
+					count: 2
+					id: "54F2686E8D7D5DCF"
+					item: "twilightforest:fiery_ingot"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6431137088C6475B"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "26C2D6FC561A66F6"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					id: "4E4894201B5DA0A5"
+					item: {
+						Count: 1b
+						id: "twilightforest:fiery_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "23A6547AF0E091BB"
+					item: {
+						Count: 1b
+						id: "twilightforest:fiery_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Fiery Metallurgy"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["64AF345D00F7A849"]
+			description: [
+				"Inside the Dark Forest, you'll find a structure that leads underground."
+				""
+				"To enter, you'll need to place one of the trophies you've aquired on a nearby pedistal. You can retrieve the trophy after the entrance has opened."
+				""
+				"On the 3rd layer, you'll find the Knight Phantoms. Defeat these to unlock the next boss."
+			]
+			id: "43F141A2FA1CB40D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1FFDE55E197C7035"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7FA9E4DACE10F46D"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+			]
+			shape: "circle"
+			subtitle: "The Darkest of Forests"
+			tasks: [{
+				id: "1A4EB438AA34508E"
+				item: "twilightforest:knight_phantom_trophy"
+				type: "item"
+			}]
+			title: "Entering the Dark Forest"
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["43F141A2FA1CB40D"]
+			description: ["Crafted or found in the Phantom Knight's chests."]
+			id: "2A74740F65FD50BE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "36BA26D48C694EAC"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "527228E2FB298875"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "218C6D3E08078E1B"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:knightmetal_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "68800CFF18DE1F33"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:knightmetal_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3E6F82D15B77FE08"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:knightmetal_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0EDDE35A127974DB"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:knightmetal_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Knightmetal Armor"
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["43F141A2FA1CB40D"]
+			id: "41D53080664DFFEA"
+			rewards: [
+				{
+					count: 4
+					id: "78377517D4D55A3D"
+					item: "twilightforest:knightmetal_ingot"
+					random_bonus: 4
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3B66FADB76250AB2"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "40B761BA5D7718E2"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "1E270309B235CA27"
+					item: {
+						Count: 1b
+						id: "twilightforest:knightmetal_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0C7532787B859C3D"
+					item: {
+						Count: 1b
+						id: "twilightforest:knightmetal_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "09F218D6919B8E0A"
+					item: {
+						Count: 1b
+						id: "twilightforest:knightmetal_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1918B1CC6D402340"
+					item: {
+						Count: 1b
+						id: "twilightforest:block_and_chain"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "46DF04121E110880"
+					item: {
+						Count: 1b
+						id: "twilightforest:knightmetal_shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["43F141A2FA1CB40D"]
+			description: ["Chance of being found in the Phantom Knight chests."]
+			id: "66AC3C16FC504CBA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "24A79A155F438B8E"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5A8A0BDD2C442A06"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "43668522A06B25E9"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:phantom_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "120A0D6F7D3D368C"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:phantom_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["43F141A2FA1CB40D"]
+			description: [
+				"Within the Dark Forest, you'll find the Dark Tower."
+				""
+				"To enter, look for the reappearing blocks at the base. Find your way to the final floor to fight the Ur-Ghast."
+				""
+				"The Ur-Ghast is recommended to kill with a ranged weapon. There are 4 Ghast traps found on the boss floor, which can be used to damage and temporarily stun the Ur-Ghast."
+				""
+				"These are charged with Ghastling kills, then activated with redstone. You don't have to use them, but they can prove useful."
+			]
+			id: "3FCCEC4B0877E367"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "53A64592364F76D6"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "0FF9993B29D7E16A"
+					item: "twilightforest:carminite"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "518EA96E800645F9"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+			]
+			shape: "circle"
+			subtitle: "Dark Carmonite Tower"
+			tasks: [{
+				id: "5ACD31523A082894"
+				item: "twilightforest:ur_ghast_trophy"
+				type: "item"
+			}]
+			title: "Tears of Fire"
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3FCCEC4B0877E367"]
+			description: [
+				"The &1Carminite Builder&f, when powered with a redstone signal, will generate temporary blocks in the direction the signal came from."
+				""
+				"The &6Carminite Reactor&f will convery nearby Obsidian and Netherrack into False Goid and False Diamond. After a short period of time, this will suck up nearby blocks and explode, creating Carminite Ghastlings around it."
+			]
+			id: "1FBD121AFD31E0DF"
+			rewards: [
+				{
+					count: 2
+					id: "23378D9361617ACD"
+					item: "twilightforest:carminite"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1B1287D183D3D386"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					id: "6D14A99C1650DC68"
+					item: "twilightforest:carminite_builder"
+					type: "item"
+				}
+				{
+					id: "7FE15A627B3A6550"
+					item: "twilightforest:carminite_reactor"
+					type: "item"
+				}
+			]
+			title: "Carminite Devices"
+			x: 7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3FCCEC4B0877E367"]
+			description: [
+				"&1Reappearing Blocks&f are like really cool doors. Once right-clicked, they'll disappear for a short time."
+				""
+				"The &6Vanishing Blocks&f will disappear when right-clicked, but they don't come back."
+			]
+			id: "61D7FC0A82104339"
+			rewards: [
+				{
+					count: 4
+					id: "76BE774A69681710"
+					item: "twilightforest:reappearing_block"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "6B1551F52713E44F"
+					item: "twilightforest:vanishing_block"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2A4FDCAC54EE39B0"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					id: "1A173A6C8A0B0D92"
+					item: "twilightforest:reappearing_block"
+					type: "item"
+				}
+				{
+					id: "0A4AD0279953E734"
+					item: "twilightforest:vanishing_block"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6C819134525F8A9E"]
+			description: [
+				"This is a single-use item that will prevent death. Instead of dying, the charm will be consumed and you'll be given given health regen for a short perior of time. "
+				""
+				"These are found in loot chests."
+			]
+			hide_dependency_lines: true
+			id: "1B8195E4F81434C7"
+			rewards: [
+				{
+					id: "1731F63757891211"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					id: "7F3F408268FC09E1"
+					item: "twilightforest:charm_of_life_1"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "25C28350665B6DF2"
+				item: "twilightforest:charm_of_life_1"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1B8195E4F81434C7"]
+			description: ["Just like the Charm of Life I, this item is consumed to prevent your death. When consumed, you'll regen all of your health and be given Regen IV, Resistance, and Fire Resistance for 30 seconds."]
+			id: "04CF869F233B59B8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "70CF703A3F3691A6"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "11675D8D3CF4B8E5"
+					item: "twilightforest:charm_of_life_1"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "0E8FDEFB3910F3D0"
+				item: "twilightforest:charm_of_life_2"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6C819134525F8A9E"]
+			description: [
+				"A sword that deals 40 hearts of damage, but only has 1 durability."
+				""
+				"You can make this indistructable if you want to use this."
+				""
+				"These are rarely found in loot chests in the Aurora Palace"
+			]
+			hide_dependency_lines: true
+			id: "0F2D5F8679E271EC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6F49256701DA42A8"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "65D6E42C59694FA7"
+				item: {
+					Count: 1b
+					id: "twilightforest:glass_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C819134525F8A9E"]
+			description: [
+				"This bow is rarely found in the Aurora Palace."
+				""
+				"When an enemy is hit from the bow, you wiil swap places with them. Be careful shooting things in the sky!"
+			]
+			hide_dependency_lines: true
+			id: "35B28581DDAE387E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4B43910EB063EF19"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "18BA0E57F356222E"
+				item: {
+					Count: 1b
+					id: "twilightforest:ender_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6C819134525F8A9E"]
+			description: [
+				"This armor can be crafted using &1Ironwood&f."
+				""
+				"This armor comes automatically enchanted as well."
+			]
+			hide_dependency_lines: true
+			id: "49D9CB62EFDEBDD5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "472FB9A120942DF5"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "2A88CFFAA9BA6715"
+					item: "twilightforest:raw_ironwood"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "645796D54CECB6EA"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:ironwood_helmet"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:aqua_affinity"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7846FEB9E0A6DE67"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:ironwood_chestplate"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:protection"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "49DCB14C903760A5"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:ironwood_leggings"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:protection"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "316E9A50FA565EEA"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:ironwood_boots"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:feather_falling"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6C819134525F8A9E"]
+			description: [
+				"A Magnet that can pull up anything with Ore in name, except Coal."
+				""
+				"This is found in Hollow Hill chests."
+			]
+			hide_dependency_lines: true
+			id: "5502F97EBD2300C3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "54E259D0DCA14549"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "6A362CB718A331D3"
+				item: {
+					Count: 1b
+					id: "twilightforest:ore_magnet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6C819134525F8A9E"]
+			description: ["What it says on the tin. When used will get rid of leaves in an area around the user."]
+			hide_dependency_lines: true
+			id: "3DA8242298B69D95"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1EB3966B8B2EF820"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			shape: "diamond"
+			subtitle: "A Glorified Leafblower"
+			tasks: [{
+				id: "0FD08719337F6F02"
+				item: {
+					Count: 1b
+					id: "twilightforest:peacock_feather_fan"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6C819134525F8A9E"]
+			description: [
+				"There are a lot of different foods you can make and try from the Twilight Forest!"
+				""
+				"Try them all!"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:bowl"
+			id: "739E479E20130D27"
+			rewards: [
+				{
+					count: 3
+					id: "548903E9327742A5"
+					item: "minecraft:enchanted_golden_apple"
+					random_bonus: 3
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "79B0AD7E660DCDEC"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Twilight Gourmet"
+			tasks: [
+				{
+					id: "3A5BE1292A24BFBB"
+					item: "twilightforest:raw_venison"
+					type: "item"
+				}
+				{
+					id: "1D4C71E1E40EE3A6"
+					item: "twilightforest:cooked_venison"
+					type: "item"
+				}
+				{
+					id: "4CFDDE51890641F8"
+					item: "twilightforest:maze_wafer"
+					type: "item"
+				}
+				{
+					id: "4630B2F089CDD032"
+					item: "twilightforest:cooked_meef"
+					type: "item"
+				}
+				{
+					id: "29996BE524B3209A"
+					item: "twilightforest:experiment_115"
+					type: "item"
+				}
+				{
+					id: "7A07CA0A1E2F7C7F"
+					item: "twilightforest:hydra_chop"
+					type: "item"
+				}
+				{
+					id: "0B8C3A4F71EDE381"
+					item: "twilightforest:torchberries"
+					type: "item"
+				}
+				{
+					advancement: "twilightforest:twilight_dinner"
+					criterion: ""
+					id: "5716A985D2CDF933"
+					type: "advancement"
+				}
+			]
+			title: "Fancy Noms"
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6C819134525F8A9E"]
+			description: [
+				"This item is like a torch launcher. It launcher &6Moonworms&f at the targeted block, which lights up the blocks similar to a torch."
+				""
+				"You can find this in some Hollow Hill and Lich Tower treasure chests."
+			]
+			hide_dependency_lines: true
+			id: "54E390BF3926C351"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1D87EEC752E78D97"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "33F97D723F7897BE"
+				item: {
+					Count: 1b
+					id: "twilightforest:moonworm_queen"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6C819134525F8A9E"]
+			description: [
+				"Want to make the Overworld feel more like the Twilight Forest?"
+				""
+				"You can use this powder on Overwold animals to convert them into their Twilight Forest varients."
+				""
+				"You can find this in dungeon chests in the Twilight Forest."
+			]
+			hide_dependency_lines: true
+			id: "5D07101A67F29437"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3548DE6079F39480"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "7EE9AF99C6B0A72B"
+				item: "twilightforest:transformation_powder"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6C819134525F8A9E"]
+			description: [
+				"This is slightly stronger than Naga armor, and comes fully enchanted."
+				""
+				"You can make these by finding &6Steeleaf&f within the Twilight Forest."
+			]
+			hide_dependency_lines: true
+			id: "4AEEA1F350011479"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "304B0313F7CCB263"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "11336D8D641A8B79"
+					item: "twilightforest:steeleaf_ingot"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "709A2B920D2C8639"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:steeleaf_helmet"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:projectile_protection"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "492F710905463EF5"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:steeleaf_chestplate"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:blast_protection"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4FBD6102CD1FE04A"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:steeleaf_leggings"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:fire_protection"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "33754F39B7AA4322"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:steeleaf_boots"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:feather_falling"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6C819134525F8A9E"]
+			description: ["The companion to the Giant's Pickaxe, this oversized replica is wielded by the defenders of the island right above the highlands."]
+			hide_dependency_lines: true
+			id: "5E6A8DEB845AC53A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "19E3EBB7374BED7D"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2A3F661D8D102550"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "59B0797E7CC1C4C1"
+				item: {
+					Count: 1b
+					id: "twilightforest:giant_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6C819134525F8A9E"]
+			description: [
+				"The ice sword when swung will give enemies Frosted for 10 seconds when being attacked."
+				""
+				"When shot the ice bow will inflict Slowness III for 10 seconds upon hit."
+				""
+				"Both can be found within the Aurora Palace."
+			]
+			hide_dependency_lines: true
+			id: "6498BFAB6D04D05A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "086D6099BDD7BBCB"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "69F25BDDD84CAADF"
+					item: {
+						Count: 1b
+						id: "twilightforest:ice_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5D20F9305FC2EC74"
+					item: {
+						Count: 1b
+						id: "twilightforest:ice_bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Ice Weaponry"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3FCCEC4B0877E367"]
+			description: [
+				"After defeating the Ur-Ghast, you'll unlock the Snowy Forest biomes."
+				""
+				"There are many creatures to fight, but to continue your progression, you'll need to kill the Alpha Yeti."
+				""
+				"You can find the Alpha Yeti in a massive Yeti cave, defeat it to move on."
+			]
+			id: "79BBD8FF9D22C5CA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "449BB60B1674EF8E"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "689493456D011393"
+					item: "twilightforest:alpha_yeti_fur"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7F7D32ADF19DEC23"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				id: "412EA2FC1C438A4A"
+				item: "twilightforest:alpha_yeti_fur"
+				type: "item"
+			}]
+			title: "To the Snow Biomes!"
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["79BBD8FF9D22C5CA"]
+			description: ["Small Yetis and Winter Wolves drop fur to make this armor."]
+			id: "22A78FACBBD762F9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4247C3FAD60C1248"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0D4F79F57E6D6686"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+			]
+			subtitle: "Dyable!"
+			tasks: [
+				{
+					id: "7138ACF7E61BBD9A"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:arctic_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "060CBC80390AC75D"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:arctic_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "38BA9F9C7268693E"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:arctic_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0B28F694ACDC2EF1"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:arctic_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Arctic Armor"
+			x: 9.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["79BBD8FF9D22C5CA"]
+			description: ["Crafted from Alpha Yeti Fur."]
+			id: "7124E4C2FAB0FAB6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "05DC3B60ABB28321"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "3DA3A0FE27CB9C36"
+					item: "twilightforest:alpha_yeti_fur"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1255DE18A69BC036"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					id: "564E4A7744419E42"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:yeti_helmet"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:protection"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "33F21F3944E6998C"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:yeti_chestplate"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:protection"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "19A9656F129C8B55"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:yeti_leggings"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:protection"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "182AF18F32B2A98B"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "twilightforest:yeti_boots"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:protection"
+									lvl: 2s
+								}
+								{
+									id: "minecraft:feather_falling"
+									lvl: 4s
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Yeti Armor"
+			x: 10.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["79BBD8FF9D22C5CA"]
+			description: [
+				"Defeating the Alpha Yeti unlocks the Glacier biome. Here you'll find cure little penguins and the Snow Queen."
+				""
+				"At the top of the Aurora Palace, the Snow Queen will summon ice crystals to protect herself."
+				""
+				"She'll also slam ice blocks down that destroy the floor and deal massive damage."
+				""
+				"You'll only be able to hit her top half, and she is protected by ice blocks."
+				""
+				"After defeating the Snow Quenn, you'll unlock the Highlands."
+			]
+			id: "03E13A60D58552A2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4145AB8928FF22AF"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5A6C2AFF187746DF"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				id: "1002F9C46ABDEFB8"
+				item: "twilightforest:snow_queen_trophy"
+				type: "item"
+			}]
+			title: "Clear Skies"
+			x: 11.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["03E13A60D58552A2"]
+			description: ["Dropped by the Snow Queen, this bow will shoot arrows that home in on your targets. No more missing!"]
+			id: "5689E30E7046BF43"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "33F846A168E1B267"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "2AAEEA5BC43356A0"
+				item: {
+					Count: 1b
+					id: "twilightforest:seeker_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 11.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["03E13A60D58552A2"]
+			description: ["Dropped from the Snow Queen, this bow shoots 3 arrows at the same time, while only using 1."]
+			id: "71C389A4A37074B4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "71F3D3F0058D0AF2"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			tasks: [{
+				id: "7C4FAF71B7ADFCAC"
+				item: {
+					Count: 1b
+					id: "twilightforest:triple_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["03E13A60D58552A2"]
+			description: [
+				"Once you've unlocked the Highland biome, head over and find some trolls to kills."
+				""
+				"They can drop some Magic Beans, you'll also find chests that give you Uberus Soil, which is needed to grow the beans. "
+			]
+			id: "00C09C3CC2884AC0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "40A23F9F6CD58C0B"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			tasks: [{
+				id: "546E13F4826E6368"
+				item: "twilightforest:magic_beans"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["00C09C3CC2884AC0"]
+			description: [
+				"With your Magic Beans and Uberous Soil, you'll want to look for a large cloud in the highlands biomes."
+				""
+				"Plant the magic beans in the soil and grow a beanstalk all the way up. Here you'll find the giants."
+				""
+				"You'll ned to kill the Miner Giant and get their pickaxe the continue on."
+			]
+			id: "1030F1A74CFC3FE8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "598B99C657FFBC74"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "09393D5A4F90D4E7"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+			]
+			shape: "pentagon"
+			subtitle: "The giants look like me, but are nothing LIKE me."
+			tasks: [{
+				id: "7C060E1DF57000DC"
+				item: {
+					Count: 1b
+					id: "twilightforest:giant_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1030F1A74CFC3FE8"]
+			description: [
+				"With the Giant Pickaxe, you'll want to head back to Troll Caves to find Giant Obsidian."
+				""
+				"Use the Giant Pickaxe to break it, and you'll find some loot. You want to get the Lamp of Cinders to continue."
+			]
+			id: "4EE3400FBEFC3A86"
+			rewards: [
+				{
+					id: "11DAC8F5828F5555"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:healing"
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5F11489C96E5765C"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "34822A7635291C26"
+				item: {
+					Count: 1b
+					id: "twilightforest:lamp_of_cinders"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4EE3400FBEFC3A86"]
+			description: [
+				"Using the Lamp of Cinders, you will now be able to break the thorns in the Thornland Biome."
+				""
+				"Gather some Thorn Roses to coninue onto the Final Plateau."
+			]
+			id: "1650D0DF45E4E395"
+			rewards: [
+				{
+					id: "30BAE457D0F44BB0"
+					item: "minecraft:diamond_block"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5FC57AECAAEEB202"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "22596922289063EF"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+			]
+			shape: "heart"
+			tasks: [{
+				count: 12L
+				id: "1D3A098DC6E456A0"
+				item: "twilightforest:thorn_rose"
+				type: "item"
+			}]
+			title: "Every Thorn has its Rose"
+			x: 11.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1650D0DF45E4E395"]
+			description: [
+				".... is not yet implimented."
+				""
+				"Instead head to the giant castle in the Final Plateau and gather some door blocks!"
+				""
+				"There is also a center podium where the final boss will eventually take place. Perhaps some early reconnasance is in order?"
+			]
+			id: "169AC4843C0D2383"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2BFBFC63D8CB55C5"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4B4B5AC274B2FD6A"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1A9876683D60223D"
+					table_id: 28026836370523306L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					biome: "twilightforest:final_plateau"
+					icon: "twilightforest:castle_brick"
+					id: "6E9ED9E90FE91904"
+					title: "Enter the Final Plateau"
+					type: "biome"
+				}
+				{
+					count: 12L
+					id: "425105BBC74C2E44"
+					item: "twilightforest:pink_castle_door"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "5F462891089E4860"
+					item: "twilightforest:yellow_castle_door"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "5130A99586283DA6"
+					item: "twilightforest:blue_castle_door"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "30C3B6CF1D4D60C0"
+					item: "twilightforest:violet_castle_door"
+					type: "item"
+				}
+				{
+					id: "05DEDB3BB4336108"
+					observe_type: 0
+					timer: 0L
+					title: "The final arena"
+					to_observe: "twilightforest:violet_force_field"
+					type: "observation"
+				}
+			]
+			title: "The Final Boss"
+			x: 10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["169AC4843C0D2383"]
+			description: [
+				"Within the Twilight Forest, hidden within the giant tree's leaves, are loot chests that can give you rare saplings."
+				""
+				"Collect them all!"
+			]
+			hide: true
+			id: "42013480AFEE8D31"
+			optional: true
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "20BA749B058D53E8"
+					table_id: 8189434663572996492L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5D3B22517D1ECF8A"
+					table_id: 8189434663572996492L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6D4E0782C6901541"
+					table_id: 8189434663572996492L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "30F7C023DC211512"
+					table_id: 8189434663572996492L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "27D4E05CC5356983"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+				{
+					icon: "minecraft:experience_bottle"
+					id: "0FE53719B106F821"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7101C8CFFEBAA932"
+					table_id: 6337519974882758042L
+					type: "random"
+				}
+			]
+			shape: "gear"
+			size: 3.0d
+			tasks: [
+				{
+					id: "1CDD9D6B0FB41C74"
+					item: "twilightforest:time_sapling"
+					type: "item"
+				}
+				{
+					id: "539D54653AA48246"
+					item: "twilightforest:sorting_sapling"
+					type: "item"
+				}
+				{
+					id: "68A210D447445BF8"
+					item: "twilightforest:mining_sapling"
+					type: "item"
+				}
+				{
+					id: "146AC46D82C83CDA"
+					item: "twilightforest:transformation_sapling"
+					type: "item"
+				}
+			]
+			title: "The Real Final Boss"
+			x: 7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["42013480AFEE8D31"]
+			description: [
+				"There are two advancements within the Twilight Forest set as a grand challenge to all. One of them is shown above, to eat everything added within the Twilight Forest. The other is more.... time consuming."
+				""
+				"The task is simple in premise. Get every single plant related item from the Twilight Forest (aside foliage such as mayapples and moss carpets), to grace your inventory at least once. "
+				""
+				"Every log, stripped log, hollowed log, plank, stair, slab, fence, fence gate, bannister, pressure plate, button, door, trapdoor, sign, and chest of every type of log. As well as the Giant Log, the 4 Towerwood Variants, Liveroots (block and item), Mangrove Roots, Normal Roots, Root Strands, Rainbow Leaves, Hedge Leaves, Leaf Pile, Thorn Rose, Thorn Leaves, Huge Stalk and Bean Stalk Leaves. "
+				""
+				"Only then can you be called a Meniacal Dendrologist..... good luck and god speed."
+			]
+			hide_dependency_lines: false
+			id: "519C87CB3F435C7A"
+			optional: true
+			rewards: [
+				{
+					icon: "minecraft:experience_bottle"
+					id: "5132202BB6B4917B"
+					type: "xp_levels"
+					xp_levels: 80
+				}
+				{
+					id: "3455D83CE3C41F58"
+					item: "twilightforest:twilight_portal_miniature_structure"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "1FA8CC02FDF65764"
+					item: "twilightforest:knightmetal_block"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "40270AFFEC8A1F8E"
+					item: "twilightforest:carminite_block"
+					type: "item"
+				}
+				{
+					id: "0B5CF7EE28E80ACB"
+					item: "twilightforest:cube_talisman"
+					type: "item"
+				}
+			]
+			subtitle: "The ultimate challenge"
+			tasks: [{
+				advancement: "twilightforest:arborist"
+				criterion: ""
+				id: "75C72105D57AD6ED"
+				type: "advancement"
+			}]
+			title: "The Twilight Botanist"
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["42013480AFEE8D31"]
+			description: ["There are rare biomes outside of the normal route that a regular traveler within the Twilight Forest might miss. Lets fix that shall we?"]
+			hide: true
+			id: "33B2D4C27C3EB042"
+			optional: true
+			rewards: [
+				{
+					icon: "minecraft:experience_bottle"
+					id: "71F3839F2B3434CA"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					id: "2CFD6A50EEE0E783"
+					item: "twilightforest:moon_dial"
+					type: "item"
+				}
+			]
+			subtitle: "The Road Less Traveled"
+			tasks: [
+				{
+					biome: "twilightforest:lake"
+					icon: "minecraft:water_bucket"
+					id: "49477EB60481AD2C"
+					title: "The Twilight Lake"
+					type: "biome"
+				}
+				{
+					biome: "twilightforest:spooky_forest"
+					icon: "twilightforest:canopy_sapling"
+					id: "33A75EC09AFE59DD"
+					title: "The Spooky Forest"
+					type: "biome"
+				}
+				{
+					biome: "twilightforest:dense_mushroom_forest"
+					icon: "chipped:button_red_mushroom"
+					id: "63D7DA1768DA06AA"
+					title: "The Dense Mushroom Forest"
+					type: "biome"
+				}
+				{
+					biome: "twilightforest:enchanted_forest"
+					icon: "twilightforest:rainbow_oak_sapling"
+					id: "5C15D822F470777E"
+					title: "The Enchanted Forest"
+					type: "biome"
+				}
+			]
+			title: "The Twilight Explorer"
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["42013480AFEE8D31"]
+			description: [
+				"The magical trees upon first glance do not look like much besides some new wood types, but each has a hidden usage."
+				""
+				"The &aTree of Time&f speeds up the tick speed of surrounding plants, causing them to grow much faster."
+				""
+				"The &bTree of Transformation&f will slowly turn the ground underneath its leaves into a Magical Forest Biome, regardless of where its planted within the Overworld."
+				""
+				"The &6Miner's Tree&f when planted will work as a unbreakable stationary Ore Magnet for any ore up to 35 blocks below."
+				""
+				"The &5Sorting Tree&f will sort items in vanilla wooden chests within its range over time, saving you the effort of doing it yourself."
+			]
+			id: "1D9C31700FB5F2B4"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "64E4C3E4E90DFF59"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			subtitle: "Information Within"
+			tasks: [{
+				id: "7720376373EE8E55"
+				type: "checkmark"
+			}]
+			title: "I speak for all these magical trees"
+			x: 4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6E50777CCBB65ACC"]
+			description: [
+				"Forged from the focus found deep within the Minoshroom Labyrinth this table allows the user to revert crafted items to its components for a XP cost."
+				""
+				"Can also be used as a crafting table in a pinch as well"
+			]
+			id: "3F8E97FABDD323EE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4B44BA259452E2B9"
+				table_id: 28026836370523306L
+				type: "random"
+			}]
+			subtitle: "Mistakes Unmade"
+			tasks: [{
+				id: "0BD22FAE04FEA925"
+				item: "twilightforest:uncrafting_table"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+	]
+	title: " &2Twilight Forest"
+}
